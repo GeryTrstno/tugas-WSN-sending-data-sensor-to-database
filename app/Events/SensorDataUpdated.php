@@ -33,6 +33,6 @@ class SensorDataUpdated implements ShouldBroadcast
     // Nama event yang akan diterima oleh frontend
     public function broadcastAs()
     {
-        return 'sensor-updated';
+        return 'SensorDataUpdated';
     }
 }

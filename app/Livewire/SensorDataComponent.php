@@ -10,7 +10,7 @@ class SensorDataComponent extends Component
     public $status;
 
     // Menyatakan bahwa Livewire akan mendengarkan event 'sensorUpdated'
-    protected $listeners = ['sensorUpdated' => 'updateSensor'];
+    protected $listeners = ['sensor-updated' => 'updateSensor'];
 
     public function mount()
     {
@@ -29,6 +29,6 @@ class SensorDataComponent extends Component
     public function render()
     {
         // Mengembalikan view yang akan ditampilkan
-        return view('livewire.sensor-data');
+        return view('livewire.sensor-data-component');
     }
 }

@@ -71,7 +71,11 @@
 
         </div>
     </div>
-
-    <livewire:sensor-data />
+    <div>
+        Distance: <span id="distance">0</span> cm
+    </div>
+    <div>
+        Status: <span id="status">Unknown</span>
+    </div>
 
 </x-layouts.app>
