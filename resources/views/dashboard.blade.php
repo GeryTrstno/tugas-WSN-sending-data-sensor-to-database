@@ -71,4 +71,7 @@
 
         </div>
     </div>
+
+    <livewire:sensor-data />
+
 </x-layouts.app>
