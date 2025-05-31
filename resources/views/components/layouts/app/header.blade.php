@@ -15,11 +15,6 @@
                 </flux:navbar.item>
                 <flux:navbar.item>
                     <a href="/" class="flex items-center gap-2">
-                        <span>Settings</span>
-                    </a>
-                </flux:navbar.item>
-                <flux:navbar.item>
-                    <a href="/" class="flex items-center gap-2">
                         <span>About</span>
                     </a>
                 </flux:navbar.item>

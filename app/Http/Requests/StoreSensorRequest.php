@@ -24,6 +24,7 @@ class StoreSensorRequest extends FormRequest
         return [
             'distance' => 'required|numeric|min:0',
             'status' => 'required|in:Jauh,Sedang,Dekat',
+            'created_at' => 'nullable',
         ];
     }
 }

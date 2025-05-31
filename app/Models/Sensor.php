@@ -12,6 +12,6 @@ class Sensor extends Model
 
     protected $fillable = [
         'distance',
-        'status'
+        'status',
     ];
 }

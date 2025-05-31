@@ -14,7 +14,10 @@ class SensorController extends Controller
      */
     public function index()
     {
-        //
+        $sensors = Sensor::all();
+
+        // Mengirim data ke view
+        return view('sensors.index', compact('sensors'));
     }
 
     /**
