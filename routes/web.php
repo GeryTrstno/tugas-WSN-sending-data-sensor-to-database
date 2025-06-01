@@ -6,24 +6,16 @@ use App\Models\Sensor;
 use App\Events\BidPlacedEvent;
 use Illuminate\Http\Request;
 use App\Http\Controllers\SensorController;
+use App\Http\Controllers\DashboardController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [DashboardController::class, 'show'])->name('dashboard');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::post('/clear-data', [DashboardController::class, 'clearAllData'])->name('dashboard.clear-data'); // Perbaiki nama rute di sini
 
-Route::get('/monitoring', function () {
-    $data = Sensor::latest()->take(10)->get();
-    return view('monitoring', compact('data'));
-});
+Route::view('/about', 'about')->name('about');
 
-Route::post('/bid', function (Request $request) {
-    BidPlacedEvent::dispatch($request->user, $request->bid);
-});
+Route::view('/about', 'about')->name('about');
 
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');

@@ -37,8 +37,6 @@ class SensorController extends Controller
         // Simpan ke DB
         $sensor = Sensor::create($validated);
 
-        event(new SensorDataUpdated($sensor->distance, $sensor->status));
-
         return response()->json([
             'message' => 'Data sensor berhasil disimpan',
             'data' => $sensor
