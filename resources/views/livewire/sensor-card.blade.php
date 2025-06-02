@@ -1,4 +1,4 @@
-<div wire:init='LoadSingleData' wire:poll.5s='LoadSingleData'
+<div wire:init='LoadSingleData' wire:poll.1s='LoadSingleData'
      class="relative aspect-square overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white p-6 shadow-lg">
     <div class="text-center">
         <h1 class="sensor-icon text-3xl sm:text-4xl lg:text-5xl text-blue-500">📏</h1>

@@ -1,4 +1,4 @@
-<div class="w-full" wire:init="LoadData" wire:poll.5s='LoadData'>
+<div class="w-full" wire:init="LoadData" wire:poll.1s='LoadData'>
     <!-- Mobile Card View (Hidden on larger screens) -->
     <div class="block sm:hidden space-y-3">
         @foreach ($sensors as $sensor)

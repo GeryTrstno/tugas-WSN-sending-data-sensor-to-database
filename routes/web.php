@@ -15,8 +15,6 @@ Route::post('/clear-data', [DashboardController::class, 'clearAllData'])->name('
 
 Route::view('/about', 'about')->name('about');
 
-Route::view('/about', 'about')->name('about');
-
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 

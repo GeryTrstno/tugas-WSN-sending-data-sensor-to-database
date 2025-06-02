@@ -1,4 +1,4 @@
-<div wire:init='LoadVariables' wire:poll.5s='LoadVariables' class="relative aspect-square overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white p-6 shadow-lg">
+<div wire:init='LoadVariables' wire:poll.1s='LoadVariables' class="relative aspect-square overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white p-6 shadow-lg">
     <div class="text-center mb-4 sm:mb-6">
         <div class="sensor-icon text-3xl sm:text-4xl lg:text-5xl text-blue-500">📊</div>
         <div class="font-semibold text-lg sm:text-xl lg:text-2xl mt-2">Statistik Sensor</div>
